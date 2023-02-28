@@ -2,13 +2,19 @@ name: "z Slack Notify"
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/**
+  workflow_dispatch:
 
 jobs:
   notify:
     name: Slack notify
     runs-on: ubuntu-latest
     steps:
-      - name: Slack notifyiii
+      - name: Slack notify
         uses: slackapi/slack-github-action@v1.23.0
         with:
           channel-id: C04R78WTQMN
