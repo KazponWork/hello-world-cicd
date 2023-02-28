@@ -17,7 +17,7 @@ variable "username" {
   sensitive = true
 }
 
-variable "password" {
+variable "pw" {
   type      = string
   sensitive = true
 }
