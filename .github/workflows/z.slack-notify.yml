@@ -8,7 +8,7 @@ jobs:
     name: Slack notify
     runs-on: ubuntu-latest
     steps:
-      - name: Slack notify
+      - name: Slack notifyiii
         uses: slackapi/slack-github-action@v1.23.0
         with:
           channel-id: C04R78WTQMN
