@@ -52,10 +52,10 @@ jobs:
       - name: Terraform plan
         run: |
           terraform plan \
+          -detailed-exitcode \
           -var 'project=${{ env.TF_PROJECT }}' \
           -var 'environment=${{ env.TF_ENVIRONMENT }}' \
           -var 'username=${{ secrets.MYSQL_USERNAME }}' \
           -var 'password=${{ secrets.MYSQL_PASSWORD }}' \
           -input=false \
-          -no-color \
-          -detailed-exitcode
+          -no-color
