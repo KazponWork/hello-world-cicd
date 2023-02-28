@@ -55,7 +55,7 @@ jobs:
           -var 'project=${{ env.TF_PROJECT }}' \
           -var 'environment=${{ env.TF_ENVIRONMENT }}' \
           -var 'username=${{ secrets.MYSQL_USERNAME }}' \
-          -var 'Passw0rd=${{ secrets.MYSQL_PASSWORD }}' \
+          -var 'password=${{ secrets.MYSQL_PASSWORD }}' \
           -input=false \
           -no-color \
           -detailed-exitcode
