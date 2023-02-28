@@ -59,3 +59,7 @@ jobs:
           -input=false \
           -no-color \
           -detailed-exitcode
+      - name: Failed
+        if: ${{ failure() }}
+        run: |
+          echo "Failedddddddddd!"
